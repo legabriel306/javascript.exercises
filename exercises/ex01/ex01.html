@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+
+    <link rel="stylesheet" href="ex01.css">
+</head>
+<body>
+    <header>
+        <h1>Qual sua Idade?</h1>
+    </header>
+    <main>
+        <section>
+            <p>
+                <label for="ano-atual">Em que ano estamos?:</label> <input type="number" name="ano-atual" id="ano-atual" max="5000" min="1900">
+            </p>
+            <p>
+                <label for="ano-nascimento">Em que ano você nasceu?:</label> <input type="number" name="ano-nascimento" id="ano-nascimento" max="5000" min="1900" >            
+            </p>
+            <input type="button" value="Finalizar" onclick="finalizar()">
+        </section>
+        <section id="res">
+
+        </section>
+    </main>
+    <script src="ex01.js"></script>
+</body>
+</html>

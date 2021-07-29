@@ -15,10 +15,13 @@
     <main>
         <section>
             <p>
-                <label for="emprestimo">Qual é o valor do empréstimo?:</label> <input type="number" name="emprestimo" id="emprestimo" max="5000" min="1900">
+                <label for="emprestimo">Qual é o valor do empréstimo?:</label> <input type="number" name="emprestimo" id="emprestimo" max="5000" min="0">
             </p>
             <p>
-                <label for="Parcela">Em quantas parcelas?:</label> <input type="number" name="parcela" id="parcela" max="5000" min="1900" >            
+                <label for="Parcela">Em quantas parcelas?:</label> <input type="number" name="parcela" id="parcela" max="5000" min="0" >            
+            </p>
+            <p>
+                <label for="juros">Juros (%):</label> <input type="number" name="juros" id="juros" max="5000" min="0">
             </p>
             <input type="button" value="Finalizar" onclick="finalizar()">
         </section>

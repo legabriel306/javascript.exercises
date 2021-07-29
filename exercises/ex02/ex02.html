@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcela</title>
+
+    <link rel="stylesheet" href="ex02.css">
+</head>
+<body>
+    <header>
+        <h1>Parcela</h1>
+    </header>
+    <main>
+        <section>
+            <p>
+                <label for="emprestimo">Qual é o valor do empréstimo?:</label> <input type="number" name="emprestimo" id="emprestimo" max="5000" min="1900">
+            </p>
+            <p>
+                <label for="Parcela">Em quantas parcelas?:</label> <input type="number" name="parcela" id="parcela" max="5000" min="1900" >            
+            </p>
+            <input type="button" value="Finalizar" onclick="finalizar()">
+        </section>
+        <section id="res">
+
+        </section>
+    </main>
+    <script src="ex02.js"></script>
+</body>
+</html>

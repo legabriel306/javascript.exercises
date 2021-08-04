@@ -27,3 +27,10 @@ const cadastrarNumeros = () => {
     res.innerHTML += `<p>Valores Nulos: <strong>${nulo}</strong></p>`;
     res.innerHTML += `<p>A soma dos valores pares é <strong>${somPar}</strong></p>`; 
 };
+function calcularSoma(array) {
+    let total = 0;
+    for (let i = 0; i < array.length; i++) {
+        total += array[i]; 
+    }
+    return total;
+}

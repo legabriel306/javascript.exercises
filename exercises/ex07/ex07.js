@@ -34,3 +34,8 @@ function calcularSoma(array) {
     }
     return total;
 }
+function calcularMedia(array) {
+    let soma = calcularSoma(array);
+    let media = soma / array.length;
+    return media;
+}

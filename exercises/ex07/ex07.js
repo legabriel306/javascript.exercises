@@ -39,3 +39,12 @@ function calcularMedia(array) {
     let media = soma / array.length;
     return media;
 }
+function calcularDivCinco(array) {
+    let numDivCinco = 0;
+    for (let i = 0; i < array.length; i++) {
+        if ((array[i] % 5) == 0) {
+            numDivCinco += 1;
+        }
+    }
+    return numDivCinco;
+}

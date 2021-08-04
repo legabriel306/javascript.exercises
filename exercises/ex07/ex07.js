@@ -7,3 +7,23 @@ const gerarCadastro = () => {
     }
     form.innerHTML += `<input type="button" value="Cadastrar" onclick="cadastrarNumeros()">`;
 };
+const cadastrarNumeros = () => {
+    let res = document.querySelector('div#res');
+    res.innerHTML = '';
+    let totalNum = Number(document.querySelector('input#totalNum').value);
+    let numeros = [];
+    for (let i = 0; i < totalNum; i++) {
+        numeros[i] = Number(document.querySelector(`input#num${i}`).value); 
+    }
+    let soma = calcularSoma(numeros);
+    let media = calcularMedia(numeros);
+    let divCinco = calcularDivCinco(numeros);
+    let nulo = totalNulo(numeros);
+    let somPar = calcularSomaPares(numeros);
+    
+    res.innerHTML += `<p>A soma esntre os valores é <strong>${soma}</strong></p> `;
+    res.innerHTML += `<p>A media entre os valores é <strong>${media}</strong></p>`;
+    res.innerHTML += `<p>Valores divisiveis por cinco: <strong>${divCinco}</strong></p>`;
+    res.innerHTML += `<p>Valores Nulos: <strong>${nulo}</strong></p>`;
+    res.innerHTML += `<p>A soma dos valores pares é <strong>${somPar}</strong></p>`; 
+};
